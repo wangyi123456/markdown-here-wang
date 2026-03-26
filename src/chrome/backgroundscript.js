@@ -60,6 +60,43 @@ chrome.runtime.onInstalled.addListener((details) => {
     title: Utils.getMessage('context_menu_item')
   });
 
+  // Create theme switching parent menu
+  chrome.contextMenus.create({
+    id: 'mdh-theme-parent',
+    contexts: ['editable'],
+    title: '\u5207\u6362\u6e32\u67d3\u98ce\u683c'
+  });
+
+  // Theme sub-items with radio buttons
+  chrome.contextMenus.create({
+    id: 'mdh-theme-gentle',
+    parentId: 'mdh-theme-parent',
+    contexts: ['editable'],
+    title: '\ud83c\udf38 \u6e29\u67d4\u98ce\uff08\u9ed8\u8ba4\uff09',
+    type: 'radio',
+    checked: true
+  });
+  chrome.contextMenus.create({
+    id: 'mdh-theme-formal',
+    parentId: 'mdh-theme-parent',
+    contexts: ['editable'],
+    title: '\ud83d\udcd0 \u4e25\u8c28\u98ce',
+    type: 'radio'
+  });
+  chrome.contextMenus.create({
+    id: 'mdh-theme-tech',
+    parentId: 'mdh-theme-parent',
+    contexts: ['editable'],
+    title: '\ud83d\udcbb \u79d1\u6280\u98ce',
+    type: 'radio'
+  });
+
+  // Restore saved theme radio state
+  OptionsStore.get(function(prefs) {
+    var theme = prefs['main-css-theme'] || 'gentle';
+    try { chrome.contextMenus.update('mdh-theme-' + theme, { checked: true }); } catch(e) {}
+  });
+
   // Note: If we find that the upgrade info page opens too often, we may
   // need to add delays. See: https://github.com/adam-p/markdown-here/issues/119
   upgradeCheck();
@@ -100,6 +137,33 @@ function upgradeCheck() {
 
 // Handle context menu clicks.
 chrome.contextMenus.onClicked.addListener(async function(info, tab) {
+  // Theme switching
+  if (info.menuItemId.startsWith('mdh-theme-')) {
+    var themeKey = info.menuItemId.replace('mdh-theme-', '');
+    var themeMap = {
+      'gentle': '/common/styles/style-gentle.css',
+      'formal': '/common/styles/style-formal.css',
+      'tech': '/common/styles/style-tech.css'
+    };
+    var themePath = themeMap[themeKey];
+    if (themePath) {
+      try {
+        var response = await fetch(chrome.runtime.getURL(themePath));
+        var css = await response.text();
+        OptionsStore.set({
+          'main-css': css,
+          'main-css-theme': themeKey
+        }, function() {
+          console.log('Theme switched to: ' + themeKey);
+        });
+      } catch(e) {
+        console.error('Failed to load theme CSS:', e);
+      }
+    }
+    return;
+  }
+
+  // Normal Markdown Toggle
   await handleActionClick(tab, info);
 });
 
