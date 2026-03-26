@@ -1,6 +1,8 @@
 /*
- * Copyright Adam Pritchard 2013
- * MIT License : https://adampritchard.mit-license.org/
+ * MD快速排版 (Markdown Here Wang)
+ * Copyright (c) 2026 词元why (wangyi123456)
+ * Portions Copyright (c) 2015 Adam Pritchard (original Markdown Here)
+ * MIT License: https://opensource.org/licenses/MIT
  */
 
 /*
@@ -207,7 +209,7 @@ function setupForgotToRenderInterceptors(composeElem, MdhHtmlToText, marked, pre
   var composeSendButton = findClosestSendButton(composeElem);
 
   if (!composeSendButton) {
-    Utils.consoleLog('Markdown Here was unable to find the Gmail "Send" button. Please let the developers know by creating an issue at: https://github.com/adam-p/markdown-here/issues');
+    Utils.consoleLog('MD快速排版 was unable to find the Gmail "Send" button. Please let the developers know by creating an issue at: https://github.com/adam-p/markdown-here/issues');
     return;
   }
 
@@ -328,7 +330,7 @@ function probablyWritingMarkdown(mdMaybe, marked, prefs) {
 
   function logMatch(type, match) {
     var log =
-      'Markdown Here detected unrendered ' + type +
+      'MD快速排版 detected unrendered ' + type +
       (typeof(match.index) !== 'undefined' ?
         (': "' + mdMaybe.slice(match.index, match.index+10) + '"') :
         '');

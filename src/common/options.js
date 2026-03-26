@@ -1,6 +1,8 @@
 /*
- * Copyright Adam Pritchard 2015
- * MIT License : https://adampritchard.mit-license.org/
+ * MD快速排版 (Markdown Here Wang)
+ * Copyright (c) 2026 词元why (wangyi123456)
+ * Portions Copyright (c) 2015 Adam Pritchard (original Markdown Here)
+ * MIT License: https://opensource.org/licenses/MIT
  */
 
 "use strict";
@@ -63,7 +65,7 @@ function onLoad() {
   });
 
   // Theme card click handlers
-  document.querySelectorAll('.theme-option').forEach(function(card) {
+  document.querySelectorAll('.theme-card').forEach(function(card) {
     card.addEventListener('click', function() {
       var theme = this.dataset.theme;
       selectTheme(theme);
@@ -96,16 +98,13 @@ function onLoad() {
     headerAnchorsEnabled.checked = prefs['header-anchors-enabled'];
     gfmLineBreaksEnabled.checked = prefs['gfm-line-breaks-enabled'];
 
-    // Restore saved theme selection
+  // Restore saved theme selection
     currentTheme = prefs['main-css-theme'] || 'gentle';
     highlightThemeCard(currentTheme);
 
     setInterval(checkChange, 100);
     optionsGetSuccessful = true;
   });
-
-  // Load the changelist section
-  loadChangelist();
 
   // Check if test file exists
   fetch('./test/index.html')
@@ -134,7 +133,7 @@ document.addEventListener('DOMContentLoaded', onLoad, false);
 
 // Highlight the active theme card
 function highlightThemeCard(theme) {
-  document.querySelectorAll('.theme-option').forEach(function(card) {
+  document.querySelectorAll('.theme-card').forEach(function(card) {
     card.classList.remove('active');
   });
   var activeCard = document.getElementById('theme-' + theme);
@@ -272,52 +271,6 @@ function cssSyntaxSelectChange() {
     'text',
     css => {
       cssSyntaxEdit.value = css;
-    });
-}
-
-function loadChangelist() {
-  Utils.getLocalFile(
-    Utils.getLocalURL('/common/CHANGES.md'),
-    'text',
-    function(changes) {
-      var markedOptions = {
-            gfm: true,
-            pedantic: false,
-            sanitize: false };
-      changes = marked(changes, markedOptions);
-      Utils.saferSetInnerHTML(document.getElementById('changelist'), changes);
-
-      // Show the changelist container
-      document.getElementById('changelist-container').style.display = '';
-
-      const prevVer = location.search ? location.search.match(/prevVer=([0-9\.]+)/) : null;
-      if (prevVer) {
-        const version = prevVer[1];
-        const changelist = document.getElementById('changelist');
-        const allH2s = changelist.querySelectorAll('h2');
-        let prevVerStart = null;
-        for (const h2 of allH2s) {
-          if (h2.textContent.match(new RegExp('v'+version+'$'))) {
-            prevVerStart = h2;
-            break;
-          }
-        }
-        const firstH1 = changelist.querySelector('h1:first-child');
-        if (firstH1) {
-          const newH2 = document.createElement('h2');
-          newH2.textContent = '新增';
-          firstH1.insertAdjacentElement('afterend', newH2);
-          const wrapper = document.createElement('div');
-          wrapper.className = 'changelist-new';
-          let current = newH2.nextElementSibling;
-          while (current && current !== prevVerStart) {
-            const next = current.nextElementSibling;
-            wrapper.appendChild(current);
-            current = next;
-          }
-          newH2.insertAdjacentElement('afterend', wrapper);
-        }
-      }
     });
 }
 

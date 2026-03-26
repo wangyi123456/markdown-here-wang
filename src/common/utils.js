@@ -1,6 +1,8 @@
 /*
- * Copyright Adam Pritchard 2015
- * MIT License : https://adampritchard.mit-license.org/
+ * MD快速排版 (Markdown Here Wang)
+ * Copyright (c) 2026 词元why (wangyi123456)
+ * Portions Copyright (c) 2015 Adam Pritchard (original Markdown Here)
+ * MIT License: https://opensource.org/licenses/MIT
  */
 
 /*
@@ -332,7 +334,7 @@ function getLocalFile(url, dataType, callback) {
 }
 
 
-// Events fired by Markdown Here will have this property set to true.
+// Events fired by MD快速排版 will have this property set to true.
 var MARKDOWN_HERE_EVENT = 'markdown-here-event';
 
 // Fire a mouse event on the given element. (Note: not super robust.)

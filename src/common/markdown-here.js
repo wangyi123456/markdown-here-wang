@@ -1,10 +1,12 @@
 /*
- * Copyright Adam Pritchard 2015
- * MIT License : https://adampritchard.mit-license.org/
+ * MD快速排版 (Markdown Here Wang)
+ * Copyright (c) 2026 词元why (wangyi123456)
+ * Portions Copyright (c) 2015 Adam Pritchard (original Markdown Here)
+ * MIT License: https://opensource.org/licenses/MIT
  */
 
 /*
- * This file is the heart of Markdown Here. It decides whether we're rendering
+ * This file is the heart of MD快速排版. It decides whether we're rendering
  * or reverting; whether we're doing a selection or the whole thing; and
  * actually does it (calling out for the final render).
  */
@@ -251,7 +253,7 @@ function getMarkdownStylesheet(elem, css) {
   }
 
   if (!stylesheet) {
-    throw 'Markdown Here stylesheet not found!';
+    throw 'MD快速排版 stylesheet not found!';
   }
 
   // Take the stylesheet element out of the DOM
@@ -410,7 +412,7 @@ function findMarkdownHereWrapper(focusedElem) {
 }
 
 
-// Finds all Markdown Here wrappers in the given range. Returns an array of the
+// Finds all MD快速排版 wrappers in the given range. Returns an array of the
 // wrapper elements, or null if no wrappers found.
 function findMarkdownHereWrappersInRange(range) {
   // Adapted from: https://stackoverflow.com/a/1483487/729729
@@ -556,7 +558,7 @@ function markdownHere(document, markdownRenderer, logger, renderComplete) {
     mylog = logger;
   }
 
-  // If the cursor (or current selection) is in a Markdown Here wrapper, then
+  // If the cursor (or current selection) is in a MD快速排版 wrapper, then
   // we're reverting that wrapper back to Markdown. If there's a selection that
   // contains one or more wrappers, then we're reverting those wrappers back to
   // Markdown.

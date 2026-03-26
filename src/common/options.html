@@ -10,7 +10,7 @@ MIT License : https://adampritchard.mit-license.org/
   <link rel="icon" type="image/png" href="images/icon32.png"/>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet"/>
 
-  <title>Markdown Here 选项</title>
+  <title>MD快速排版 选项</title>
 
   <style type="text/css">
   :root {
@@ -41,6 +41,7 @@ MIT License : https://adampritchard.mit-license.org/
     min-height: 100vh;
     padding: 0;
     -webkit-font-smoothing: antialiased;
+    font-size: 15px; /* Size increased for better readability */
   }
 
   /* ===== 背景装饰 ===== */
@@ -90,13 +91,13 @@ MIT License : https://adampritchard.mit-license.org/
     box-shadow: 0 4px 16px rgba(243,123,29,0.2);
   }
   .header-text h1 {
-    font-size: 1.5em;
+    font-size: 1.6em;
     font-weight: 700;
     letter-spacing: -0.02em;
     color: var(--text);
   }
   .header-text p {
-    font-size: 0.85em;
+    font-size: 0.95em;
     color: var(--text-muted);
     margin-top: 2px;
   }
@@ -117,7 +118,7 @@ MIT License : https://adampritchard.mit-license.org/
     box-shadow: var(--shadow-lg);
   }
   .card-title {
-    font-size: 0.95em;
+    font-size: 1.05em;
     font-weight: 600;
     color: var(--text);
     margin-bottom: 16px;
@@ -129,7 +130,7 @@ MIT License : https://adampritchard.mit-license.org/
     font-size: 1.1em;
   }
   .card-desc {
-    font-size: 0.85em;
+    font-size: 0.95em;
     color: var(--text-secondary);
     margin-bottom: 16px;
     line-height: 1.5;
@@ -160,12 +161,12 @@ MIT License : https://adampritchard.mit-license.org/
     border-radius: 7px;
     background: var(--accent);
     color: white;
-    font-size: 0.7em;
+    font-size: 0.8em;
     font-weight: 700;
     margin-bottom: 8px;
   }
   .step-text {
-    font-size: 0.85em;
+    font-size: 0.95em;
     color: var(--text-secondary);
     line-height: 1.5;
   }
@@ -176,7 +177,7 @@ MIT License : https://adampritchard.mit-license.org/
     border-radius: 4px;
     padding: 1px 6px;
     font-family: 'Inter', monospace;
-    font-size: 0.85em;
+    font-size: 0.9em;
     box-shadow: 0 1px 0 rgba(0,0,0,0.08);
   }
 
@@ -230,13 +231,13 @@ MIT License : https://adampritchard.mit-license.org/
   .theme-card .emoji { font-size: 2.2em; margin-bottom: 10px; position: relative; }
   .theme-card .name {
     font-weight: 600;
-    font-size: 0.95em;
+    font-size: 1.05em;
     color: var(--text);
     margin-bottom: 6px;
     position: relative;
   }
   .theme-card .desc {
-    font-size: 0.78em;
+    font-size: 0.88em;
     color: var(--text-muted);
     line-height: 1.4;
     position: relative;
@@ -247,7 +248,7 @@ MIT License : https://adampritchard.mit-license.org/
     right: 8px;
     background: var(--accent);
     color: white;
-    font-size: 0.65em;
+    font-size: 0.75em;
     font-weight: 600;
     padding: 2px 8px;
     border-radius: 20px;
@@ -294,7 +295,7 @@ MIT License : https://adampritchard.mit-license.org/
     border: none;
     border-radius: 9px;
     font-family: inherit;
-    font-size: 0.85em;
+    font-size: 0.95em;
     font-weight: 600;
     cursor: pointer;
     transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
@@ -332,7 +333,7 @@ MIT License : https://adampritchard.mit-license.org/
   }
   details summary {
     cursor: pointer;
-    font-size: 0.85em;
+    font-size: 0.95em;
     font-weight: 500;
     color: var(--text-secondary);
     padding: 10px 0;
@@ -345,7 +346,7 @@ MIT License : https://adampritchard.mit-license.org/
     content: '▶';
     display: inline-block;
     margin-right: 8px;
-    font-size: 0.7em;
+    font-size: 0.8em;
     transition: transform 0.2s ease;
   }
   details[open] summary::before {
@@ -358,7 +359,7 @@ MIT License : https://adampritchard.mit-license.org/
     width: 100%;
     height: 180px;
     font-family: 'JetBrains Mono', Consolas, 'Courier New', monospace;
-    font-size: 12px;
+    font-size: 14px;
     border: 1px solid var(--border);
     border-radius: var(--radius-sm);
     padding: 14px;
@@ -382,7 +383,7 @@ MIT License : https://adampritchard.mit-license.org/
     margin-bottom: 10px;
   }
   .syntax-row label {
-    font-size: 0.85em;
+    font-size: 0.95em;
     color: var(--text-secondary);
     white-space: nowrap;
     font-weight: 500;
@@ -392,7 +393,7 @@ MIT License : https://adampritchard.mit-license.org/
     border: 1px solid var(--border);
     border-radius: 8px;
     font-family: inherit;
-    font-size: 0.85em;
+    font-size: 0.95em;
     background: white;
     color: var(--text);
     cursor: pointer;
@@ -421,22 +422,63 @@ MIT License : https://adampritchard.mit-license.org/
   .opt-item:hover { background: rgba(0,0,0,0.02); }
   .opt-item input[type="checkbox"] {
     margin-top: 2px;
-    width: 16px;
-    height: 16px;
+    width: 18px;
+    height: 18px;
     accent-color: var(--accent);
     flex-shrink: 0;
   }
   .opt-label strong {
-    font-size: 0.9em;
+    font-size: 1em;
     font-weight: 600;
     color: var(--text);
     display: block;
     margin-bottom: 2px;
   }
   .opt-label span {
-    font-size: 0.8em;
+    font-size: 0.9em;
     color: var(--text-muted);
     line-height: 1.4;
+  }
+
+  /* ===== 联系作者占位 ===== */
+  .support-card {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 40px;
+    padding: 24px 0 16px;
+  }
+  .support-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #FFFFFF;
+    padding: 20px;
+    border-radius: var(--radius);
+    box-shadow: 0 4px 24px rgba(0,0,0,0.04);
+    border: 1px solid var(--border);
+    transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .support-item:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 32px rgba(243,123,29,0.1);
+    border-color: var(--accent-border);
+  }
+  .support-img {
+    height: 180px;
+    width: 180px;
+    border-radius: 8px;
+    object-fit: contain;
+    margin-bottom: 12px;
+  }
+  .support-text {
+    font-size: 0.95em;
+    font-weight: 600;
+    color: var(--text);
+    background: var(--bg);
+    padding: 4px 16px;
+    border-radius: 20px;
+    letter-spacing: 0.02em;
   }
 
   /* ===== 保存提示 ===== */
@@ -450,7 +492,7 @@ MIT License : https://adampritchard.mit-license.org/
     color: var(--accent);
     padding: 12px 22px;
     border-radius: 12px;
-    font-size: 0.85em;
+    font-size: 0.95em;
     font-weight: 600;
     opacity: 0;
     transform: translateY(-12px) scale(0.95);
@@ -469,7 +511,7 @@ MIT License : https://adampritchard.mit-license.org/
     text-align: center;
     padding: 32px 0 16px;
     color: var(--text-muted);
-    font-size: 0.75em;
+    font-size: 0.85em;
     letter-spacing: 0.02em;
   }
   .footer a {
@@ -480,7 +522,7 @@ MIT License : https://adampritchard.mit-license.org/
   .footer a:hover { text-decoration: underline; }
 
   /* ===== 快捷键提示 ===== */
-  .hotkey-current-error { display: none; color: #EF4444; font-size: 0.85em; }
+  .hotkey-current-error { display: none; color: #EF4444; font-size: 0.9em; }
 
   /* ===== 隐藏 ===== */
   #tests-link { display: none; }
@@ -498,6 +540,7 @@ MIT License : https://adampritchard.mit-license.org/
   .card:nth-child(4) { animation-delay: 0.15s; }
   .card:nth-child(5) { animation-delay: 0.2s; }
   .card:nth-child(6) { animation-delay: 0.25s; }
+  .card:nth-child(7) { animation-delay: 0.3s; }
   </style>
 </head>
 
@@ -507,10 +550,10 @@ MIT License : https://adampritchard.mit-license.org/
 
   <!-- 页头 -->
   <div class="header">
-    <img class="header-icon" src="images/icon96.png" alt="Markdown Here"/>
+    <img class="header-icon" src="images/icon96.png" alt="MD快速排版"/>
     <div class="header-text">
-      <h1>Markdown Here</h1>
-      <p>用 Markdown 写邮件，一键渲染为精美排版</p>
+      <h1>MD快速排版</h1>
+      <p>少即是多，三套严选专业设计模板，涵盖全部排版场景，并且支持自定义样式，帮你快速排版</p>
     </div>
   </div>
 
@@ -560,20 +603,10 @@ MIT License : https://adampritchard.mit-license.org/
     </div>
   </div>
 
-  <!-- 实时预览 -->
+  <!-- 微调样式 -->
   <div class="card">
-    <div class="card-title"><span class="icon">👀</span> 实时预览</div>
-    <div class="btn-row">
-      <button id="markdown-toggle-button" class="btn btn-primary">▶ Markdown 转换</button>
-    </div>
-    <div class="preview-frame">
-      <iframe id="rendered-markdown"><!-- src set dynamically --></iframe>
-    </div>
-  </div>
-
-  <!-- 自定义样式 -->
-  <div class="card">
-    <div class="card-title"><span class="icon">🖌️</span> 自定义样式</div>
+    <div class="card-title"><span class="icon">🖌️</span> 微调样式</div>
+    <div class="card-desc">基于你当前选择的渲染风格模板，你可以直接在此通过修改 CSS 来微调排版效果。更改将自动保存并应用于下次渲染。</div>
     <details open>
       <summary>基本渲染 CSS</summary>
       <textarea id="css-edit" wrap="off"></textarea>
@@ -589,6 +622,17 @@ MIT License : https://adampritchard.mit-license.org/
       </div>
       <textarea id="css-syntax-edit" wrap="off"></textarea>
     </details>
+  </div>
+
+  <!-- 实时预览 -->
+  <div class="card">
+    <div class="card-title"><span class="icon">👀</span> 实时预览</div>
+    <div class="btn-row">
+      <button id="markdown-toggle-button" class="btn btn-primary">▶ Markdown 转换</button>
+    </div>
+    <div class="preview-frame">
+      <iframe id="rendered-markdown"><!-- src set dynamically --></iframe>
+    </div>
   </div>
 
   <!-- 高级选项 -->
@@ -626,8 +670,8 @@ MIT License : https://adampritchard.mit-license.org/
         </div>
       </div>
       <div style="margin-top:14px;">
-        <label style="font-size:0.85em;font-weight:500;color:var(--text-secondary)">公式渲染模板：</label>
-        <textarea id="math-edit" style="height:55px;margin-top:6px;font-size:11px"></textarea>
+        <label style="font-size:0.95em;font-weight:500;color:var(--text-secondary)">公式渲染模板：</label>
+        <textarea id="math-edit" style="height:60px;margin-top:8px;font-size:12px"></textarea>
         <div class="btn-row">
           <button id="math-reset-button" class="btn btn-ghost">↺ 恢复默认</button>
         </div>
@@ -635,18 +679,26 @@ MIT License : https://adampritchard.mit-license.org/
     </details>
   </div>
 
-  <!-- 更新日志 -->
-  <div class="card" id="changelist-container" style="display:none">
-    <details>
-      <summary>📋 更新日志</summary>
-      <div id="changelist" style="padding-top:10px;font-size:0.85em;line-height:1.6"></div>
-    </details>
+  <!-- 联系支持 -->
+  <div class="card">
+    <div class="card-title"><span class="icon">❤️</span> 联系 / 支持作者</div>
+    <div class="card-desc">非常感谢您的使用。如果您喜欢这款插件，可以通过以下方式联系或支持作者后续开发：</div>
+    <div class="support-card">
+      <div class="support-item">
+        <img src="images/qr-wechat.jpg" class="support-img" alt="词元why微信" />
+        <div class="support-text">关注交流</div>
+      </div>
+      <div class="support-item">
+        <img src="images/qr-pay.jpg" class="support-img" alt="微信赞赏" />
+        <div class="support-text">支持打赏</div>
+      </div>
+    </div>
   </div>
 
 </div>
 
 <div class="footer">
-  <a href="https://github.com/adam-p/markdown-here" target="_blank">Markdown Here</a> · 开源项目 · MIT 协议
+  <a href="https://github.com/adam-p/markdown-here" target="_blank">MD快速排版</a> · 开源项目 · MIT 协议
 </div>
 
 <div id="saved-msg">✓ 更改已保存</div>

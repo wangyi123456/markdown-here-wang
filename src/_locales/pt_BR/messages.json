@@ -1,12 +1,12 @@
 {
   "app_name": {
-    "message": "Markdown Here",
+    "message": "MD快速排版",
     "description": "the name of the extension",
     "inMozDTD": true
   },
   "app_slogan": {
     "message": "Escreva seu email em Markdown e o torne elegante.",
-    "description": "shown as subtitle for Markdown Here in the browser extensions list"
+    "description": "shown as subtitle for MD快速排版 in the browser extensions list"
   },
   "context_menu_item": {
     "message": "Alternar Markdown",
@@ -51,12 +51,12 @@
     "description": "Shown in an alert dialog if the user tries to render a field that cannot be rendered"
   },
   "moz_options_dlg_instruction": {
-    "message": "Click the 'OK' button to open the Markdown Here Options tab",
+    "message": "Click the 'OK' button to open the MD快速排版 Options tab",
     "description": "In Thunderbird, in order to open the options tab we first have to open a temporary dialog box. This is the text in that box telling the user what to do. Please use the same translation for 'OK' that the application uses.",
     "inMozDTD": true
   },
   "moz_options_dlg_title": {
-    "message": "Markdown Here Options",
+    "message": "MD快速排版 Options",
     "description": "In Thunderbird, in order to open the options tab we first have to open a temporary dialog box. This is the title for that box.",
     "inMozDTD": true
   },
@@ -73,7 +73,7 @@
     "description": "A section title"
   },
   "options_page__advanced_usage": {
-    "message": "Para mais informações e usos avançados, veja a <a href=\"https://github.com/adam-p/markdown-here\" target=\"_blank\">página do projeto do Markdown Here</a>. Você deve também explorar as opções abaixo."
+    "message": "Para mais informações e usos avançados, veja a <a href=\"https://github.com/adam-p/markdown-here\" target=\"_blank\">página do projeto do MD快速排版</a>. Você deve também explorar as opções abaixo."
   },
   "options_page__basic_usage": {
     "message": "Uso Básico"
@@ -87,29 +87,29 @@
     "description": "A step in the basic usage instructions"
   },
   "options_page__contributing_1": {
-    "message": "<strong>Se alguma vez você escreveu um bloco de código em um e-mail, então você já pode ajudar a melhorar o Markdown Here.</strong> <a href=\"https://github.com/adam-p/markdown-here/blob/master/CONTRIBUTING.md\" target=\"_blank\">CONTRIBUTING.md</a>"
+    "message": "<strong>Se alguma vez você escreveu um bloco de código em um e-mail, então você já pode ajudar a melhorar o MD快速排版.</strong> <a href=\"https://github.com/adam-p/markdown-here/blob/master/CONTRIBUTING.md\" target=\"_blank\">CONTRIBUTING.md</a>"
   },
   "options_page__contributing_2": {
-    "message": "Ajude a tornar o Markdown Here disponível no seu idioma. <a href=\"https://github.com/adam-p/markdown-here/blob/master/CONTRIBUTING.md#translation\" target=\"_blank\">Traduções são bem vindas</a>."
+    "message": "Ajude a tornar o MD快速排版 disponível no seu idioma. <a href=\"https://github.com/adam-p/markdown-here/blob/master/CONTRIBUTING.md#translation\" target=\"_blank\">Traduções são bem vindas</a>."
   },
   "options_page__contributing_title": {
     "message": "Contribuindo",
     "description": "A section title"
   },
   "options_page__donate_plea_1": {
-    "message": "Uma vez que você decida que o Markdown Here é genial, por favor ajude-me a comprar flores para minha esposa para que ela não fique muito chateada com o tempo que eu gasto trabalhando nele. <strong>Obrigado!</strong>"
+    "message": "Uma vez que você decida que o MD快速排版 é genial, por favor ajude-me a comprar flores para minha esposa para que ela não fique muito chateada com o tempo que eu gasto trabalhando nele. <strong>Obrigado!</strong>"
   },
   "options_page__donate_plea_2": {
-    "message": "<strong>Ajude a tornar o Markdown Here melhor!</strong>"
+    "message": "<strong>Ajude a tornar o MD快速排版 melhor!</strong>"
   },
   "options_page__donate_plea_3": {
-    "message": "<strong>Apoie o desenvolvimento do Markdown Here!</strong>"
+    "message": "<strong>Apoie o desenvolvimento do MD快速排版!</strong>"
   },
   "options_page__donate_plea_4": {
-    "message": "Você sabe o que facilita manter o Markdown Here funcionando no Chrome, Firefox, Thunderbird, Safari, Opera, Gmail, Yahoo, Hotmail, Blogger, Evernote etc.? <strong>Café!</strong>"
+    "message": "Você sabe o que facilita manter o MD快速排版 funcionando no Chrome, Firefox, Thunderbird, Safari, Opera, Gmail, Yahoo, Hotmail, Blogger, Evernote etc.? <strong>Café!</strong>"
   },
   "options_page__footer_1": {
-    "message": "<em>Markdown Here</em> é código livre. Para perguntar, informar bugs, solicitar recursos, ou contribuir, visite a <a target=\"_blank\" href=\"https://github.com/adam-p/markdown-here\">página do projeto Github</a> ou o <a target=\"_blank\" href=\"https://groups.google.com/forum/?fromgroups=#!forum/markdown-here\">Google Group \"markdown-here\"</a>.",
+    "message": "<em>MD快速排版</em> é código livre. Para perguntar, informar bugs, solicitar recursos, ou contribuir, visite a <a target=\"_blank\" href=\"https://github.com/adam-p/markdown-here\">página do projeto Github</a> ou o <a target=\"_blank\" href=\"https://groups.google.com/forum/?fromgroups=#!forum/markdown-here\">Google Group \"markdown-here\"</a>.",
     "description": "part of the page footer text"
   },
   "options_page__footer_2": {
@@ -137,7 +137,7 @@
     "description": "Label for the checkbox that enables the support of 'Github-flavored Markdown' line breaks."
   },
   "options_page__ghdiscussions": {
-    "message": "Ask a question or start a conversation in <a href=\"https://github.com/adam-p/markdown-here/discussions\" target=\"_blank\">Markdown Here's GitHub Discussions</a>."
+    "message": "Ask a question or start a conversation in <a href=\"https://github.com/adam-p/markdown-here/discussions\" target=\"_blank\">MD快速排版's GitHub Discussions</a>."
   },
   "options_page__header_anchors_enabled_1": {
     "message": "Isto é prático se você quiser colocar um índice ou outros links internos no seu conteúdo. <a href=\"https://github.com/adam-p/markdown-here/wiki/Tips-and-Tricks#wiki-header-anchors\" target=\"_blank\">Aprenda como usá-lo no wiki do MDH</a>."
@@ -193,10 +193,10 @@
     "description": "button text for Markdown Toggle button"
   },
   "options_page__mdh_wiki": {
-    "message": "Visite o <a href=\"https://github.com/adam-p/markdown-here/wiki\" target=\"_blank\">wiki do Markdown Here</a> para descobrir <a href=\"https://github.com/adam-p/markdown-here/wiki/Compatibility\" target=\"_blank\">onde mais o MDH funciona</a> e mais <a href=\"https://github.com/adam-p/markdown-here/wiki/Tips-and-Tricks\" target=\"_blank\">dicas e truques</a>."
+    "message": "Visite o <a href=\"https://github.com/adam-p/markdown-here/wiki\" target=\"_blank\">wiki do MD快速排版</a> para descobrir <a href=\"https://github.com/adam-p/markdown-here/wiki/Compatibility\" target=\"_blank\">onde mais o MDH funciona</a> e mais <a href=\"https://github.com/adam-p/markdown-here/wiki/Tips-and-Tricks\" target=\"_blank\">dicas e truques</a>."
   },
   "options_page__next_steps": {
-    "message": "Se você está interessado no futuro do Markdown Here, confira a <a href=\"https://github.com/adam-p/markdown-here#next-steps\" target=\"_blank\">seção Próximos Passos</a> do README."
+    "message": "Se você está interessado no futuro do MD快速排版, confira a <a href=\"https://github.com/adam-p/markdown-here#next-steps\" target=\"_blank\">seção Próximos Passos</a> do README."
   },
   "options_page__note_default_client_styles": {
     "message": "Alguns editores de e-mail impõem seus próprios estilos. Aqui eles podem não ser evidentes."
@@ -216,14 +216,14 @@
     "description": "Link to a page that provides other ways to donate"
   },
   "options_page__page_title": {
-    "message": "Opções do Markdown Here"
+    "message": "Opções do MD快速排版"
   },
   "options_page__pretty_cool": {
     "message": "Sua mensagem agora deve estar bem legal. Envie-a para seus amigos!",
     "description": "A step in the basic usage instructions"
   },
   "options_page__preview_markdown": {
-    "message": "```javascript<br>\nfunction syntaxHighlighting() {<br>\n&nbsp; var n = 33;<br>\n&nbsp; var s = \"hello, こんにちは\";<br>\n&nbsp; console.log(s);<br>\n}<br>\n```<br>\n<br>\n* simples<br>\n* *ênfase*<br>\n&nbsp; * **ênfase forte**<br>\n&nbsp; &nbsp; * ~~tachado~~<br>\n* `código em linha`<br>\n<br>\n1. Lista numerada<br>\n&nbsp;&nbsp;&nbsp;1. Numbered sub-list<br>\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1. Numbered sub-sub-list<br>\n2. [Link](https://www.google.com)<br>\n<br>\n<br>\nUma imagem: ![Markdown Here logo](http://adam-p.github.io/markdown-here/img/icon24.png)\n<br>\n<br>\n> Citação em bloco.&nbsp; <br>\n> *Com* **um pouco de** `markdown`.<br>\n<br>\nSe o suporte de **TeX Math** estiver ativado, esta é a equação quadrática:&nbsp;<br>\n$$-b \\pm \\sqrt{b^2 - 4ac} \\over 2a$$<br>\n<br>\n# Cabeçalho 1<br>\n## Cabeçalho 2<br>\n### Cabeçalho 3<br>\n#### Cabeçalho 4<br>\n##### Cabeçalho 5<br>\n###### Cabeçalho 6<br>\n&nbsp; <br>\n| Tabelas          | São                | Legais | <br>\n| ---------------- | :----------------: | -----: | <br>\n| coluna 3 está    | alinhada à direita | $$1600 | <br>\n| coluna 2 está    | centrada           | $$12   | <br>\n| listras de zebra | são organizadas    | $$1    | <br>\n<br>\nTemos aqui uma linha horizontal:<br>\n<br>\n---<br>\n<br>\n```<br>\nbloco de código<br>\nsem destaque<br>\n```<br>\n<br>",
+    "message": "# Markdown 最常用语法速查<br>\n<br>\n> 这是一份够用、好记、能直接复制改写的 Markdown 模板。<br>\n<br>\n---<br>\n<br>\n## 1. 标题<br>\n<br>\n# 一级标题<br>\n## 二级标题<br>\n### 三级标题<br>\n<br>\n---<br>\n<br>\n## 2. 普通文字<br>\n<br>\n这是普通段落文字。<br>\n<br>\n这是第二段文字，中间空一行就是新段落。<br>\n<br>\n这一行后面加两个空格  <br>\n就可以换行。<br>\n<br>\n---<br>\n<br>\n## 3. 强调文字<br>\n<br>\n**这是加粗**<br>\n<br>\n*这是斜体*<br>\n<br>\n~~这是删除线~~<br>\n<br>\n**加粗内容** 比较适合写重点。<br>\n<br>\n---<br>\n<br>\n## 4. 引用<br>\n<br>\n> 这是引用内容。<br>\n><br>\n> 适合写提示、备注、结论。<br>\n<br>\n---<br>\n<br>\n## 5. 列表<br>\n<br>\n### 无序列表<br>\n<br>\n- 苹果<br>\n- 香蕉<br>\n- 西瓜<br>\n<br>\n### 有序列表<br>\n<br>\n1. 第一步<br>\n2. 第二步<br>\n3. 第三步<br>\n<br>\n### 任务列表<br>\n<br>\n- [x] 已完成事项<br>\n- [ ] 未完成事项<br>\n<br>\n---<br>\n<br>\n## 6. 分隔线<br>\n<br>\n---<br>\n<br>\n上面就是分隔线。<br>\n<br>\n---<br>\n<br>\n## 7. 行内代码<br>\n<br>\n安装 Python 可以使用 `python --version` 查看版本。<br>\n<br>\n---<br>\n<br>\n## 8. 代码块<br>\n<br>\n### Python 示例<br>\n<br>\n```python<br>\ndef hello():<br>\n&nbsp;&nbsp;&nbsp;&nbsp;print(\"你好，Markdown\")<br>\n<br>\nhello()<br>\n```<br>\n<br>\n### Bash 示例<br>\n<br>\n```bash<br>\nmkdir my-project<br>\ncd my-project<br>\ntouch README.md<br>\n```<br>\n<br>\n---<br>\n<br>\n## 9. 链接<br>\n<br>\n[打开百度](https://www.baidu.com)<br>\n<br>\n---<br>\n<br>\n## 10. 图片<br>\n<br>\n### 基础图片<br>\n<br>\n```markdown<br>\n![图片说明](https://via.placeholder.com/300x150)<br>\n```<br>\n<br>\n效果示例：<br>\n<br>\n![图片说明](https://via.placeholder.com/300x150)<br>\n<br>\n### 本地图片<br>\n<br>\n```markdown<br>\n![本地图片](./images/demo.png)<br>\n```<br>\n<br>\n---<br>\n<br>\n## 11. 表格<br>\n<br>\n### 基础表格<br>\n<br>\n```markdown<br>\n| 功能 | 状态 | 说明 |<br>\n| --- | --- | --- |<br>\n| 标题 | 会了 | 最常用 |<br>\n| 列表 | 会了 | 高频使用 |<br>\n| 表格 | 会了 | 写文档常用 |<br>\n```<br>\n<br>\n效果示例：<br>\n<br>\n| 功能 | 状态 | 说明 |<br>\n| --- | --- | --- |<br>\n| 标题 | 会了 | 最常用 |<br>\n| 列表 | 会了 | 高频使用 |<br>\n| 表格 | 会了 | 写文档常用 |<br>\n<br>",
     "description": "This doesn't need to be translated, unless you want to make it more relevant to your language. The raw Markdown used for previewing user styling changes. Also shows users what can be done with Markdown. Please note that the double dollar signs ($$) are needed to make a single dollar sign in the application."
   },
   "options_page__preview_title": {
@@ -243,7 +243,7 @@
     "description": "text on button to reset Primary Styling CSS"
   },
   "options_page__resources_cheatsheet_link": {
-    "message": "Se você é novato em Markdown, a <a href=\"https://github.com/adam-p/markdown-here/wiki/Markdown-Here-Cheatsheet\" target=\"_blank\">Cola de Markdown Here</a> irá te transformar num profissional."
+    "message": "Se você é novato em Markdown, a <a href=\"https://github.com/adam-p/markdown-here/wiki/Markdown-Here-Cheatsheet\" target=\"_blank\">Cola de MD快速排版</a> irá te transformar num profissional."
   },
   "options_page__resources_title": {
     "message": "Recursos e Links",
@@ -318,7 +318,7 @@
     "description": "A step in the basic usage instructions"
   },
   "plain_text_compose": {
-    "message": "Você está usando um editor de texto simples. Você deve mudar para um editor de texto formatado para usar Markdown Here.",
+    "message": "Você está usando um editor de texto simples. Você deve mudar para um editor de texto formatado para usar MD快速排版.",
     "description": "Shown in an alert dialog if the user has their email compose app set to plain text"
   },
   "toggle_button_text": {
@@ -349,7 +349,7 @@
     "description": "Tooltip text on the link that dismisses the notification"
   },
   "upgrade_notification_text": {
-    "message": "Markdown Here atualizado",
-    "description": "Text on the notification shown when Markdown Here has been updated"
+    "message": "MD快速排版 atualizado",
+    "description": "Text on the notification shown when MD快速排版 has been updated"
   }
 }

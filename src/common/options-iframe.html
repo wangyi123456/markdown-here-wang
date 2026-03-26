@@ -26,57 +26,154 @@ MIT License : https://adampritchard.mit-license.org/
   </style>
 </head>
 
-<!-- NOTE: The content of the <body> *must not* be indented or have comments,
-     otherwise it will affect the MD rendering. -->
-
 <body contenteditable="true" spellcheck="false">
-# 欢迎使用 Markdown Here<br>
+# Markdown 最常用语法速查<br>
 <br>
-这是一段**预览文本**，展示 Markdown 渲染效果。<br>
-<br>
-## 代码高亮<br>
-<br>
-```javascript<br>
-function greet(name) {<br>
-&nbsp; const msg = `你好，${name}！`;<br>
-&nbsp; console.log(msg);<br>
-&nbsp; return msg;<br>
-}<br>
-```<br>
-<br>
-## 列表<br>
-<br>
-* 普通文本<br>
-* *斜体强调*<br>
-&nbsp; * **加粗强调**<br>
-&nbsp; &nbsp; * ~~删除线~~<br>
-* `行内代码`<br>
-<br>
-1. 有序列表<br>
-&nbsp;&nbsp;&nbsp;1. 嵌套子列表<br>
-2. [这是一个链接](https://www.google.com)<br>
-<br>
-## 引用<br>
-<br>
-> 这是一段引用块。&nbsp;<br>
-> 其中包含 *斜体*、**加粗** 和 `代码`。<br>
-<br>
-## 表格<br>
-<br>
-| 项目 | 价格 | 数量 |<br>
-| ---- |:----:| ----:|<br>
-| 苹果 | ¥5 | 10 |<br>
-| 橙子 | ¥8 | 6 |<br>
-| 香蕉 | ¥3 | 15 |<br>
+> 这是一份够用、好记、能直接复制改写的 Markdown 模板。<br>
 <br>
 ---<br>
 <br>
-```<br>
-纯代码块<br>
-无语法高亮<br>
+## 1. 标题<br>
+<br>
+# 一级标题<br>
+## 二级标题<br>
+### 三级标题<br>
+<br>
+---<br>
+<br>
+## 2. 普通文字<br>
+<br>
+这是普通段落文字。<br>
+<br>
+这是第二段文字，中间空一行就是新段落。<br>
+<br>
+这一行后面加两个空格  <br>
+就可以换行。<br>
+<br>
+---<br>
+<br>
+## 3. 强调文字<br>
+<br>
+**这是加粗**<br>
+<br>
+*这是斜体*<br>
+<br>
+~~这是删除线~~<br>
+<br>
+**加粗内容** 比较适合写重点。<br>
+<br>
+---<br>
+<br>
+## 4. 引用<br>
+<br>
+> 这是引用内容。<br>
+><br>
+> 适合写提示、备注、结论。<br>
+<br>
+---<br>
+<br>
+## 5. 列表<br>
+<br>
+### 无序列表<br>
+<br>
+- 苹果<br>
+- 香蕉<br>
+- 西瓜<br>
+<br>
+### 有序列表<br>
+<br>
+1. 第一步<br>
+2. 第二步<br>
+3. 第三步<br>
+<br>
+### 任务列表<br>
+<br>
+- [x] 已完成事项<br>
+- [ ] 未完成事项<br>
+<br>
+---<br>
+<br>
+## 6. 分隔线<br>
+<br>
+---<br>
+<br>
+上面就是分隔线。<br>
+<br>
+---<br>
+<br>
+## 7. 行内代码<br>
+<br>
+安装 Python 可以使用 `python --version` 查看版本。<br>
+<br>
+---<br>
+<br>
+## 8. 代码块<br>
+<br>
+### Python 示例<br>
+<br>
+```python<br>
+def hello():<br>
+&nbsp;&nbsp;&nbsp;&nbsp;print("你好，Markdown")<br>
+<br>
+hello()<br>
 ```<br>
 <br>
-
+### Bash 示例<br>
+<br>
+```bash<br>
+mkdir my-project<br>
+cd my-project<br>
+touch README.md<br>
+```<br>
+<br>
+---<br>
+<br>
+## 9. 链接<br>
+<br>
+[打开百度](https://www.baidu.com)<br>
+<br>
+---<br>
+<br>
+## 10. 图片<br>
+<br>
+### 基础图片<br>
+<br>
+```markdown<br>
+![图片说明](https://via.placeholder.com/300x150)<br>
+```<br>
+<br>
+效果示例：<br>
+<br>
+![图片说明](https://via.placeholder.com/300x150)<br>
+<br>
+### 本地图片<br>
+<br>
+```markdown<br>
+![本地图片](./images/demo.png)<br>
+```<br>
+<br>
+---<br>
+<br>
+## 11. 表格<br>
+<br>
+### 基础表格<br>
+<br>
+```markdown<br>
+| 功能 | 状态 | 说明 |<br>
+| --- | --- | --- |<br>
+| 标题 | 会了 | 最常用 |<br>
+| 列表 | 会了 | 高频使用 |<br>
+| 表格 | 会了 | 写文档常用 |<br>
+```<br>
+<br>
+效果示例：<br>
+<br>
+| 功能 | 状态 | 说明 |<br>
+| --- | --- | --- |<br>
+| 标题 | 会了 | 最常用 |<br>
+| 列表 | 会了 | 高频使用 |<br>
+| 表格 | 会了 | 写文档常用 |<br>
+<br>
 </body>
 
 </html>

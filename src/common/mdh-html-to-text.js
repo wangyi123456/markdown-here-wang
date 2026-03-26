@@ -1,10 +1,12 @@
 /*
- * Copyright Adam Pritchard 2015
- * MIT License : https://adampritchard.mit-license.org/
+ * MD快速排版 (Markdown Here Wang)
+ * Copyright (c) 2026 词元why (wangyi123456)
+ * Portions Copyright (c) 2015 Adam Pritchard (original Markdown Here)
+ * MIT License: https://opensource.org/licenses/MIT
  */
 
 /*
-This module encapsulates Markdown Here's HTML-to-plaintext functionality.
+This module encapsulates MD快速排版's HTML-to-plaintext functionality.
 */
 
 
