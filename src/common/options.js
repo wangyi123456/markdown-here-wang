@@ -147,8 +147,8 @@ function highlightThemeCard(theme) {
 function selectTheme(theme) {
   var themeMap = {
     'gentle': '/common/styles/style-gentle.css',
-    'formal': '/common/styles/style-formal.css',
-    'tech': '/common/styles/style-tech.css'
+    'noble': '/common/styles/style-noble.css',
+    'fresh': '/common/styles/style-fresh.css'
   };
   var themePath = themeMap[theme];
   if (!themePath) return;

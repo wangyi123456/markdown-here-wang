@@ -79,17 +79,17 @@ chrome.runtime.onInstalled.addListener((details) => {
     checked: true
   });
   chrome.contextMenus.create({
-    id: 'mdh-theme-formal',
+    id: 'mdh-theme-noble',
     parentId: 'mdh-theme-parent',
     contexts: ['editable'],
-    title: '\ud83d\udcd0 \u4e25\u8c28\u98ce',
+    title: '🍷 高贵风',
     type: 'radio'
   });
   chrome.contextMenus.create({
-    id: 'mdh-theme-tech',
+    id: 'mdh-theme-fresh',
     parentId: 'mdh-theme-parent',
     contexts: ['editable'],
-    title: '\ud83d\udcbb \u79d1\u6280\u98ce',
+    title: '🍃 清新风',
     type: 'radio'
   });
 
@@ -144,8 +144,8 @@ chrome.contextMenus.onClicked.addListener(async function(info, tab) {
     var themeKey = info.menuItemId.replace('mdh-theme-', '');
     var themeMap = {
       'gentle': '/common/styles/style-gentle.css',
-      'formal': '/common/styles/style-formal.css',
-      'tech': '/common/styles/style-tech.css'
+      'noble': '/common/styles/style-noble.css',
+      'fresh': '/common/styles/style-fresh.css'
     };
     var themePath = themeMap[themeKey];
     if (themePath) {

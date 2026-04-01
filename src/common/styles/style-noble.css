@@ -1,0 +1,189 @@
+/* ==========================================
+   高贵风 - 微信公众号排版 CSS (莫兰迪暗玫瑰 - 亮色版)
+   基于 Morandi Petal | Noble Style
+   ========================================== */
+
+/* 1. 全局与排版基调 */
+.markdown-here-wrapper {
+    font-family: "MiSans", "PingFang SC", "Microsoft YaHei", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.85;
+    color: #3A3437;
+    background-color: #FFFFFF; /* 亮色背景 */
+    letter-spacing: 0.015em;
+    padding: 30px 25px;
+    border-radius: 22px;
+}
+
+/* 2. 标题系统 */
+h1, h2, h3, h4, h5, h6 {
+    color: #2D2529;
+    font-weight: 800;
+    line-height: 1.35;
+    margin: 2em 0 1em;
+    letter-spacing: -0.02em;
+    position: relative;
+}
+
+h1 {
+    font-size: 2.35em;
+    border-bottom: 1px solid rgba(216, 106, 143, 0.2);
+    padding-bottom: 0.35em;
+}
+
+h2 {
+    font-size: 1.82em;
+    border-bottom: 1px solid rgba(216, 106, 143, 0.15);
+    padding-bottom: 0.3em;
+    color: #342B2F;
+}
+
+h3 {
+    font-size: 1.36em;
+    color: #3C3337;
+}
+
+h4 {
+    font-size: 1.18em;
+    color: #42393D;
+}
+
+/* h1/h2/h3 bottom accent line */
+h1::after, h2::after {
+    content: "";
+    display: block;
+    margin-top: 0.3em;
+    width: 78px;
+    height: 3px;
+    background: rgba(255, 170, 200, 0.85); /* 保留柔和的玫瑰修饰 */
+    border-radius: 3px;
+}
+
+h3::after {
+    content: "";
+    display: block;
+    margin-top: 0.3em;
+    width: 48px;
+    height: 2px;
+    background: rgba(216, 106, 143, 0.6);
+    border-radius: 2px;
+}
+
+/* 3. 正文与加粗 */
+p {
+    margin: 1.1em 0;
+    color: #3A3437;
+}
+
+strong {
+    font-weight: bold;
+    color: #C55B7D; /* 沉稳的暗玫瑰色用于强调 */
+}
+
+/* 4. 引用块 */
+blockquote {
+    margin: 1.5em 0;
+    padding: 1.5em;
+    background: #FCF2F5;
+    border: 1px solid #F2DDE5;
+    border-left: 4px solid #C55B7D;
+    border-radius: 14px;
+    color: #50454A;
+}
+
+blockquote p {
+    margin: 0 !important;
+}
+
+/* 5. 分割线 */
+hr {
+    border: 0;
+    height: 2px;
+    background: #E8DEE3;
+    margin: 2em 0;
+}
+
+/* 6. 列表 */
+ul, ol {
+    margin: 1em 0;
+    padding-left: 1.5em;
+}
+
+li {
+    margin: 0.55em 0;
+}
+
+/* 7. 表格 */
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%;
+    margin: 2.1em 0;
+    background: #FFFFFF;
+    border: 1px solid #EFE3E8;
+    border-radius: 16px;
+    overflow: hidden;
+}
+
+th, td {
+    padding: 0.85em 1.1em;
+    border-bottom: 1px solid #EFE3E8;
+    color: #3A3437;
+}
+
+th {
+    text-align: left;
+    background: #FCF2F5;
+    font-weight: 700;
+}
+
+tr:nth-child(even) td {
+    background: #FDF8FA;
+}
+
+/* 8. 超链接 */
+a {
+    color: #C55B7D;
+    text-decoration: underline;
+    text-decoration-color: rgba(197, 91, 125, 0.3);
+}
+
+/* 9. 代码块 */
+pre {
+    background: #F9F5F7;
+    color: #4A3E43;
+    border: 1px solid #EFE3E8;
+    border-radius: 18px;
+    padding: 1.5em;
+    margin: 2.2em 0;
+    overflow: auto;
+    font-family: ui-monospace, "SF Mono", Consolas, monospace;
+    font-size: 14.5px;
+    line-height: 1.65;
+}
+
+code {
+    font-family: ui-monospace, "SF Mono", Consolas, monospace;
+    font-size: 0.9em;
+    color: #4A3E43;
+}
+
+p > code, li > code, td > code {
+    background: #FCF2F5;
+    color: #C55B7D;
+    padding: 0.2em 0.45em;
+    border-radius: 7px;
+    border: 1px solid #F2DDE5;
+    font-weight: 600;
+    margin: 0 0.2em;
+}
+
+/* 图片 */
+img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 16px;
+  display: block;
+  margin: 1.6em auto;
+}

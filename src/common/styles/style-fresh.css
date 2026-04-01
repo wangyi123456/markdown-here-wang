@@ -1,0 +1,202 @@
+/* ==========================================
+   清新风 - 微信公众号排版 CSS (青绿版)
+   基于 Morandi Ripple (Teal/Cyan) 改编 | Fresh Style
+   ========================================== */
+
+/* 1. 全局与排版基调 */
+.markdown-here-wrapper {
+    font-family: "MiSans", "PingFang SC", "Microsoft YaHei", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.8;
+    color: #3A4446;
+    background-color: #F8FBFB; /* 极为护眼的微青柔白背景 */
+    letter-spacing: 0.015em;
+    padding: 30px 25px;
+    border-radius: 24px;
+}
+
+/* 2. 标题系统 */
+h1, h2, h3, h4, h5, h6 {
+    color: #283234;
+    font-weight: 800;
+    line-height: 1.25;
+    margin: 2.2em 0 1.2em;
+    letter-spacing: -0.015em;
+    position: relative;
+}
+
+h1 {
+    font-size: 2.25em;
+    letter-spacing: -0.02em;
+    border-bottom: 1px solid rgba(95, 168, 178, 0.3);
+    padding-bottom: 0.3em;
+}
+
+h2 {
+    font-size: 1.68em;
+    border-bottom: 1px solid rgba(95, 168, 178, 0.22);
+    padding-bottom: 0.24em;
+    color: rgba(58, 68, 70, 0.9);
+}
+
+h3 {
+    font-size: 1.32em;
+    color: rgba(58, 68, 70, 0.86);
+}
+
+h4 {
+    font-size: 1.15em;
+    color: rgba(58, 68, 70, 0.8);
+}
+
+/* 标题底部的柔光修饰线 */
+h1::after, h2::after {
+    content: "";
+    display: block;
+    margin-top: 0.3em;
+    width: 76px;
+    height: 3px;
+    background: #5FA8B2;
+    border-radius: 3px;
+    opacity: 0.8;
+}
+
+h3::after {
+    content: "";
+    display: block;
+    margin-top: 0.3em;
+    width: 44px;
+    height: 2px;
+    background: rgba(95, 168, 178, 0.6);
+    border-radius: 2px;
+}
+
+h4::after {
+    content: "";
+    display: block;
+    margin-top: 0.3em;
+    width: 32px;
+    height: 2px;
+    background: rgba(95, 168, 178, 0.4);
+    border-radius: 2px;
+}
+
+/* 3. 正文与加粗 */
+p {
+    margin: 1.1em 0;
+    color: #3A4446;
+}
+
+strong {
+    font-weight: bold;
+    color: #3D8893; /* 比 Accent 略深，方便阅读 */
+}
+
+/* 4. 引用块 */
+blockquote {
+    margin: 1.8em 0;
+    padding: 1.5em;
+    background: rgba(95, 168, 178, 0.08);
+    border: 1px solid rgba(95, 168, 178, 0.12);
+    border-left: 4px solid #5FA8B2;
+    border-radius: 14px;
+    color: #4A5658;
+}
+
+blockquote p {
+    margin: 0 !important;
+}
+
+/* 5. 分割线 */
+hr {
+    border: 0;
+    height: 1px;
+    background: rgba(58, 68, 70, 0.15);
+    margin: 2.5em 0;
+}
+
+/* 6. 列表 */
+ul, ol {
+    margin: 1em 0;
+    padding-left: 1.5em;
+}
+
+li {
+    margin: 0.5em 0;
+}
+
+/* 7. 表格 */
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%;
+    margin: 2em 0;
+    background: #FFFFFF;
+    border: 1px solid rgba(58, 68, 70, 0.1);
+    border-radius: 14px;
+    overflow: hidden;
+}
+
+th, td {
+    padding: 0.75em 1em;
+    border-bottom: 1px solid rgba(58, 68, 70, 0.1);
+    color: #3A4446;
+}
+
+th {
+    text-align: left;
+    background: rgba(95, 168, 178, 0.06);
+    font-weight: 600;
+}
+
+tr:nth-child(even) td {
+    background: rgba(95, 168, 178, 0.03);
+}
+
+/* 8. 超链接 */
+a {
+    color: #5FA8B2;
+    text-decoration: underline;
+    text-decoration-color: rgba(95, 168, 178, 0.3);
+}
+
+/* 9. 代码块 */
+pre {
+    background: #EEF2F3;
+    color: #4A5658;
+    border: 1px solid rgba(95, 168, 178, 0.18);
+    border-radius: 16px;
+    padding: 1.5em;
+    margin: 2em 0;
+    overflow: auto;
+    font-family: ui-monospace, "SF Mono", Consolas, monospace;
+    font-size: 14.5px;
+    line-height: 1.6;
+}
+
+code {
+    font-family: ui-monospace, "SF Mono", Consolas, monospace;
+    font-size: 0.88em;
+    color: #4A5658;
+}
+
+/* 内联代码 */
+p > code, li > code, td > code {
+    background: rgba(95, 168, 178, 0.12);
+    color: #418892;
+    padding: 0.2em 0.45em;
+    border-radius: 7px;
+    border: 1px solid rgba(95, 168, 178, 0.25);
+    font-weight: 600;
+    margin: 0 0.2em;
+}
+
+/* 图片 */
+img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 14px;
+  display: block;
+  margin: 1.5em auto;
+}
